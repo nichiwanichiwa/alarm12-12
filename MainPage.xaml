@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="alarm.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:alarm"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TimePicker x:Name="time_pick" HorizontalAlignment="Left" Margin="143,305,0,0" VerticalAlignment="Top" Height="55" Width="109" FontSize="36" FontWeight="Bold"/>
+        <TextBlock x:Name="now_times" Margin="-32,142,-26,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="127" Width="458" HorizontalAlignment="Center" FontWeight="Bold" FontSize="72" FontFamily="MS Gothic" TextAlignment="Center"/>
+       
+        <GridView x:Name="gridView" HorizontalAlignment="Left" Height="169" Margin="38,391,0,0" VerticalAlignment="Top" Width="317">
+            <RadioButton x:Name="Sun" Content="日曜日"/>
+            <RadioButton x:Name="Mon" Content="月曜日"/>
+            <RadioButton x:Name="Tue" Content="火曜日"/>
+            <RadioButton x:Name="Wed" Content="水曜日"/>
+            <RadioButton x:Name="Thi" Content="木曜日"/>
+            <RadioButton x:Name="Fry" Content="金曜日"/>
+            <RadioButton x:Name="Sat" Content="土曜日"/>
+        </GridView>
+    </Grid>
+</Page>
